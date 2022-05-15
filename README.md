@@ -176,3 +176,84 @@
     <body>
         <div style="color: white;"> ... </  div>
     </body>
+
+
+## **The Box Model** 
+- Everything on a webpage is a rectangular box 
+
+        * {
+            border: 2px solid red;
+        }
+
+- Padding:
+  - Space between edge of box and content inside box
+
+- Margin:
+  - Space between box and other things around the box
+  - Can specify area with: margin-top, margin-bottom, margin-left, margin-right
+
+- Border:
+  - Space between margin and padding 
+  - border-width: 5px;
+  - border-color: red;
+  - border-style: solid;
+  - border: 5px solid red;
+
+<br>
+
+- box-sizing: border-box;
+  - Size of content is the actual width and height of element
+  - If border-box was not included, you would need to add padding, margin, border in order to find the actual width and height 
+
+### **Collapsing margins**
+- For vertical (top and bottom) margins, only the **larger** px value will take effect
+- In example below, the margin will be **40 px**
+
+        h2 {
+            margin: 0 0 20px 0;
+        }
+
+        div {
+            margin-top: 40px;  
+        }
+
+        p {
+            margin-top: 30px;
+        }
+    
+<br>
+
+### **Negative Margins**
+- Negative margins pull element itself in that direction 
+
+
+<br>
+
+## **Block**
+- Block elements appear stacked atop of each other, so each new element is on a new line 
+- Always takes up full width
+- Commonly used with < p> and < div>
+- Uses syntax:
+  - display: block;
+- Elements don't sit side by side but rather on top of each other 
+
+
+## **Inline**
+- Appear in line with the element they are placed beside 
+- The < a> tag will not start on a new line, but rather on the same line
+- display: inline - width and height are not respected so things may overlap
+- display: inline-block - width, height, padding are respected so no overlap and elements sit side by side 
+
+
+### **Span**
+- Like a div but inline and used for grouping parts of text
+
+        <p>
+        Lorem ipsum dolor sit amet <span class="highlight"> quis nostrud <a href="https:/   /www.dictionary.com/browse/   exercitation">exercitation</a>
+        ullamco laboris</span> nisi ut aliquip ex ea commodo    consequat.   
+        </p>
+
+<br>
+
+
+
