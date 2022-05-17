@@ -255,5 +255,68 @@
 
 <br>
 
+## **FlexBox**
+- Method of positioning/arranging items into rows or columns
+- A flex container includes:
+  - display: flex;
+- A flex item is any element inside the flex container 
+- flex syntax:
+  - flex: flex-grow flex-shrink flex-basis (percentage);
+  - flex: 0 1 0% <- Default property 
 
+<br>
 
+### Flex-grow
+- Growth factor 
+- <mark>flex: 1</mark> tells every div inside container to grow by same amount 
+- Applying <mark>flex: 2</mark> to only one div will make that div 2x the size compared to others 
+
+<br>
+
+### Flex-shrink
+- Shrink factor 
+- Only applied if size of all flex items is larger than parent container
+
+<br>
+
+### Flex-basis
+- Sets initial size of flex item 
+- In percentage
+
+<br>
+
+## **Axes**
+- flex-direction: column; <- puts main axis vertical; affects height 
+- flex-direction: row; <- puts main axies horizontal; affects width
+- Default is flex-direction: row;
+- Cross axes is perpendicular to main axes
+- When using flex-direction, set flex-basis to auto
+
+<br>
+
+## **Alignment**
+- Use <mark>justify-content:</mark> to align items across main axis
+- Defaults to flex-start
+- Possible values: 
+  - flex-start
+  - flex-end
+  - center
+  - space-around
+  - space-between
+  - space-evenly
+
+- Use <mark>align-items:</mark> to align items across cross axis 
+- Defaults to stretch 
+- Possible values:
+  - stretch;
+  - flex-start
+  - flex-end
+  - center
+  
+- Applying <mark> gap: 10px</mark> on a flex container sets space between flex items
+    
+- Use <mark>flex-warp: wrap;</mark> to make divs wrap if there is not enough space
+  
+- Use <mark>flex-wrap: nowrap;</mark> to make divs shrink to fit container
+
+- <mark>flex: flow</mark> combines flex-direction and flex-wrap together 
