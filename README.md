@@ -312,6 +312,7 @@
   - flex-start
   - flex-end
   - center
+  - baseline
   
 - Applying <mark> gap: 10px</mark> on a flex container sets space between flex items
     
