@@ -321,3 +321,43 @@
 - Use <mark>flex-wrap: nowrap;</mark> to make divs shrink to fit container
 
 - <mark>flex: flow</mark> combines flex-direction and flex-wrap together 
+
+<br><br>
+
+  # ****JavaScript****
+
+- Use `<script src="javascript.js"></script>` to include js externally
+
+- `console.log("Hello World")` to print text into browser console
+
+<br>
+
+### Variables
+
+- Use `let` to initialize variable
+- Declaring variable twice will give syntax error
+- First character cannot be digit and only legal characters
+
+<br>
+
+    let message = "Hello";
+    alert(message);        // Hello
+
+    let age = 25;
+
+<br>
+
+- Use `const` to declare a constant varible (doesn't change and can't be reassigned)
+
+<br>
+
+### Numbers
+- The `+` operator adds if variables are numbers and concatenates if one or both variables are strings
+- JS will try to convert strings to numbers in numeric operations except `+` operator 
+  - let x = "100", y = "10";
+  - let z = x / y; // equals 10
+
+<br>
+
+- `==` will check if two variable values are the same but doesn't compare datatype
+- `===` will check if two variable values are the same and check if datatypes are same
