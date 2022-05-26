@@ -361,3 +361,81 @@
 
 - `==` will check if two variable values are the same but doesn't compare datatype
 - `===` will check if two variable values are the same and check if datatypes are same
+
+### Typecasting
+
+- Use Number(x) to cast string to number
+- Use x.toString() to cast number to string
+
+    let num = '74';
+    Number(num) + 3; //77
+
+<br>
+
+### Increment/ Decrement Operators
+- If increment/decrement operator is after, then it uses previous value
+- If increment/decrement operator is before, then it uses incremented/decremented value 
+  
+<br>
+
+    let count = 0;
+    let x = count++ // x = 0
+
+    let count = 0;
+    let x = ++count // x = 1
+
+<br>
+
+## **Data types**
+- Use typeof(x) to figuer out what data type it is
+
+<br>
+
+- Number
+  - Largest num is 2<sup>53</sup>-1
+  - Smallest num is -2<sup>53</sup>-1
+
+<br>
+
+- String
+  - Surrounded by quotes like `let str = "hello"`
+  - Include string in string with let x = ${str} world;
+    - Use backticks instead of quotes 
+
+<br>
+
+- Boolean
+  - true or false value
+
+<br>
+
+- null value
+  - Reference to non-existing object; nothing; empty
+  - Null pointer
+
+<br>
+
+## **Strings**
+- All string methods return new strings and don't modify original strings
+
+- Use `let len = text.length` to get length
+
+- Use `string.slice(start,end)` to splice string (not inclusive on end index) 
+
+- Use `string.substring(start,end)` to splice string except values less than 0 are treated as 0
+
+- Use `string.substr(start,len)` to splice string where len is len of string starting at start index
+
+
+- Use `text.replace("Replaced","Replaced-with")`
+  - Only replaces first instance of replaced word
+  - Use `let newText = text.replace(/replaced/i,"R-w")` to be case insensitive
+  - Use `let newText = text.replace(/replaced/g,"R-w")` to replace all matches (not just first one)
+
+- `text.toUpperCase();`
+  
+- `text.toLowerCase();`
+  
+- `text1.concat(text2)`
+
+- `text.trim()` removes whitespace from both sides of string
