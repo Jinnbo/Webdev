@@ -439,3 +439,51 @@
 - `text1.concat(text2)`
 
 - `text.trim()` removes whitespace from both sides of string
+
+<br>
+
+## **Conditional Statements**
+
+- `if`
+- `else`
+- `else if`
+- `switch`
+
+<br>
+
+    switch(expression){
+      case x:
+        //code
+        break;
+      case y:
+        //code
+        break;
+      default:
+        // Acts like else statement
+    }
+
+<br>
+
+## **Logical Operators**
+- `||` OR
+- `&&` AND
+- `!` NOT
+- `??` Nullish coalescing
+  - Returns first value (from left to right) that's not null/undefined
+
+<br>
+    
+    // Because user is not defined, it alerts "Anon"
+
+    let user;
+    alert(user ?? "Anon"); 
+
+    // Because user is defined, it does NOT alert "Anon"
+
+    let user = "Bob";
+    alert(user ?? "Anon")
+
+- Ternary operator
+  - ` (condition) ? (run this side if true) : (run this side if false)`
+  - `(isBirthday) ? "happy bday" : "Not bday" `
+
