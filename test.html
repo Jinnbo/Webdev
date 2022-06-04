@@ -10,9 +10,25 @@
     
     <script>
 
-        let str = "hello";
+        function add7(num){
+            console.log(num+7);
+        }
 
-        alert( `${str} world`  );
+        function multiply(x,y){
+            return console.log(x*y);
+        }
+
+        function capitalize(string){
+            let res = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+            console.log(res);
+        }
+
+        function lastLetter(string){
+            let length = string.length;
+            console.log(string.charAt(length-1));
+        }
+
+
 
     </script>
 

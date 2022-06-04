@@ -487,3 +487,70 @@
   - ` (condition) ? (run this side if true) : (run this side if false)`
   - `(isBirthday) ? "happy bday" : "Not bday" `
 
+<br>
+
+## **Functions**
+- Functions that are in objects are called methods
+- Many built in functions similar to Python 
+- Define function by:
+
+      function functionName(){
+        alert("hi");
+      } 
+
+      functionName(); //Call the function
+
+- Default parameters
+
+      function hello(name='Chris') {
+        console.log(`Hello ${name}!`);
+      }
+
+      hello('Ari'); // Hello Ari!
+      hello();      // Hello Chris!
+
+- Anonymous functions
+
+      function logKey(event) {
+        console.log(`You pressed "${event.key}".`);
+      }
+
+      textBox.addEventListener('keydown', logKey);
+
+      //This one is more condensed
+
+      textBox.addEventListener('keydown', function(event) {
+        console.log(`You pressed "${event.key}".`);
+      });
+
+<br>
+
+## **Function Scope and conflicts**
+- Variables defined inside a function are in a seperate scope by itself and cannot be used outside of the function (called local variable)
+- Global scopes are accessible everywhere in code
+
+<br>
+
+## **Return Values**
+- A value that a function returns when it is completed
+
+
+<br>
+
+
+    function favoriteAnimal(animal) { // Animal is parameter
+      console.log(animal + " is my favorite animal!")
+    }
+
+    favoriteAnimal('Goat') // 'Goat' is argument
+
+<br>
+
+## **Problem Solving**
+1. Understand the problem 
+   - Draw diagrams or write in simple english to make it easier to understand
+2. Plan out your solution 
+   - Write out some pseudocode for your program
+3. Divide and conquer   
+   - Divide big problems into subproblems and solve and test 
+   - <mark>Do not try to solve the big problem in one go </mark>
