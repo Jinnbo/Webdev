@@ -554,3 +554,75 @@
 3. Divide and conquer   
    - Divide big problems into subproblems and solve and test 
    - <mark>Do not try to solve the big problem in one go </mark>
+
+
+<br>
+
+
+## **JavaScript Arrays**
+- `const arrayName = [item1, item2, item3, ...];`
+  - declare array with const keyword
+
+
+- `const person = {firstName:"John", lastName:"Doe", age:46};`
+
+<br>
+
+- Array methods:
+  - arrayName.length // returns length of array
+  - arrayName.sort()
+  - arrayName.push("element") // adds new element to end of array
+  - arrayName.pop() // removes and return last element of array
+  - arrayName.shift() // removes first element and shifts all other elements down
+  - arrayName.unshift("element") // add element to front of array; return new array length
+  - let newArray = array1.concat(array2) // adds array2 to end of array1; returns new array
+  - arrayName.splice(position, #elements removed, "element1","element2")
+  - arrayName.slice(pos) // remove element at pos; creates new array
+
+
+<br>
+
+## **JavaScript Loops**
+- The for ... of loop
+
+    const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+    for (const cat of cats) {
+      console.log(cat);
+    }
+
+
+- const newArray = arrayName.map(function) // Applies function to every element in arrayName
+- const newArray = arrayname.filter(function) // Create new array with filtered condition; function passed in returns boolean- so if true, then incluede in newArray
+
+
+<br>
+
+- For loop format:
+  - for (initializer; condition; final-expression){}
+
+<br>
+
+- while loops:
+
+      // Normal while loop
+
+      while (condition){
+        do smth
+      }
+
+      // Do while loop
+
+      initializer
+      do {
+        // code to run
+
+        final-expression
+      } while (condition)
+
+
+<br>
+
+
+## **Test Driven Development (TDD)**
+- Write automated test cases before you code
